@@ -1,0 +1,836 @@
+<html lang="en">
+
+<head>
+    <title>Цахим үйлчилгээний нэгдсэн портал</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keyword" content="mgov,Төрийн үйлчилгээ,Төрийн үйлчилгээний цахим нэг цонх,
+    Төрийн үйлчилгээний портал систем,Төрийн үйлчилгээний систем,Цахим үйлчилгээний нэгдсэн портал,
+    цахим төрийн үйлчилгээ,цахим үйлчилгээ">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Цахим үйлчилгээний нэгдсэн портал">
+    <meta property="og:description" name="description"
+        content="Монгол Улсын Засгийн газраас Иргэн, Аж ахуйн нэгж байгууллагад зориулж төрийн үйлчилгээг цахим нэг цонхны үйлчилгээгээр үзүүлж байна.">
+    <meta property="og:image" content="https://e-mongolia.mn/static/assets/system_bg.png ">
+    <meta property="og:url" content="https://e-mongolia.mn">
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-5WGJPWC"></script>
+    <script src="/static/register-service-worker.js" type="text/javascript"></script>
+    <script src="/static/install.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="/static/assets/favicon.png">
+    <link rel="manifest" href="/static/assets/manifest.json">
+    <link rel="stylesheet" href="./vendors~index.js.css">
+    <link rel="stylesheet" href="./index.js.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap" rel="stylesheet">
+    <script type="text/javascript">
+        window.__INITIAL_STATE__ = {};
+        window.initialI18nStore = {};
+        window.initialLanguage = 'dev';
+    </script>
+    <script src="/static/config.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l !== 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5WGJPWC');
+    </script>
+
+    <style media="screen">
+        .antd-img-crop-modal .ant-modal-body {
+            padding-bottom: 16px;
+        }
+
+        .antd-img-crop-modal .antd-img-crop-container {
+            position: relative;
+            width: 100%;
+            height: 40vh;
+            margin-bottom: 16px;
+        }
+
+        .antd-img-crop-modal .antd-img-crop-control {
+            display: flex;
+            align-items: center;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .antd-img-crop-modal .antd-img-crop-control button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 34px;
+            height: 34px;
+            padding: 0;
+            font-style: normal;
+            background: transparent;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+        }
+
+        .antd-img-crop-modal .antd-img-crop-control button[disabled] {
+            cursor: default;
+        }
+
+        .antd-img-crop-modal .antd-img-crop-control.zoom button {
+            font-size: 18px;
+        }
+
+        .antd-img-crop-modal .antd-img-crop-control.rotate button {
+            font-size: 16px;
+        }
+
+        .antd-img-crop-modal .antd-img-crop-control.rotate button:first-of-type {
+            transform: rotate(-20deg);
+        }
+
+        .antd-img-crop-modal .antd-img-crop-control.rotate button:last-of-type {
+            transform: rotate(20deg);
+        }
+
+        .antd-img-crop-modal .antd-img-crop-control .ant-slider {
+            flex: 1;
+            margin: 0 8px;
+        }
+    </style>
+</head>
+
+<body id="style-3" style="">
+    <div class="mazaalai">
+        <div class="popover" id="_mazaalaiPopoverWindow" style="display: none;"> </div>
+    </div>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WGJPWC" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+
+   
+        <div class="Radio__radio">
+            <div class="Radio__item"><img src="/static/assets/ed26ece9710bc0b9f8b5db73f311ec56.svg" alt="Play">
+                <div>MNB</div>
+                <div role="img" aria-required="false" style="margin-left: 5px;">
+                    <div title="" role="button" aria-label="animation" tabindex="0"
+                        style="width: 20px; height: 20px; overflow: hidden; margin: 0px auto; outline: none;"><svg
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200"
+                            preserveAspectRatio="xMidYMid meet"
+                            style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);">
+                            <defs>
+                                <clipPath id="__lottie_element_10">
+                                    <rect width="200" height="200" x="0" y="0"></rect>
+                                </clipPath>
+                            </defs>
+                            <g clip-path="url(#__lottie_element_10)">
+                                <g transform="matrix(2.0833332538604736,0,0,2.0833332538604736,0,0)" opacity="1"
+                                    style="display: block;">
+                                    <g opacity="1" transform="matrix(1,0,0,1,48,46)">
+                                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                                            d=" M24,30 C21.788999557495117,30 20,28.211000442504883 20,26 C20,26 20,-10 20,-10 C20,-12.208999633789062 21.788999557495117,-14 24,-14 C26.211000442504883,-14 28,-12.208999633789062 28,-10 C28,-10 28,26 28,26 C28,28.211000442504883 26.211000442504883,30 24,30z M8,30 C5.789000034332275,30 4,28.211000442504883 4,26 C4,26 4,-2 4,-2 C4,-4.209000110626221 5.789000034332275,-6 8,-6 C10.211000442504883,-6 12,-4.209000110626221 12,-2 C12,-2 12,26 12,26 C12,28.211000442504883 10.211000442504883,30 8,30z M-8,30 C-10.208999633789062,30 -12,28.211000442504883 -12,26 C-12,26 -12,-26 -12,-26 C-12,-28.208999633789062 -10.208999633789062,-30 -8,-30 C-5.790999889373779,-30 -4,-28.208999633789062 -4,-26 C-4,-26 -4,26 -4,26 C-4,28.211000442504883 -5.790999889373779,30 -8,30z M-24,30 C-26.208999633789062,30 -28,28.211000442504883 -28,26 C-28,26 -28,10 -28,10 C-28,7.789000034332275 -26.208999633789062,6 -24,6 C-21.791000366210938,6 -20,7.789000034332275 -20,10 C-20,10 -20,26 -20,26 C-20,28.211000442504883 -21.791000366210938,30 -24,30z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg></div>
+                </div>
+            </div>
+        </div>
+        <div style="">
+            <div class="baseLayout__fullHeight">
+                <section class="baseLayout__fullHeight ant-layout">
+                    <section class="baseLayout__layout ant-layout">
+                        <header class="ant-layout-header" style="padding: 0px; height: auto; z-index: 998;">
+                            <div class="header__header">
+                                <div class="container">
+                                    <div class="topMenu__head">
+                                        <div class="topMenu__left">
+                                            <div class="topMenu__logo"><a href="/home"><img src="./logo.svg"
+                                                        alt="logo"></a></div>
+                                            <ul class="ant-menu topMenu__menu ant-menu-dark ant-menu-root ant-menu-horizontal"
+                                                role="menu">
+                                                <li class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu"
+                                                    role="menuitem" style="display: none;">
+                                                    <div class="ant-menu-submenu-title" aria-expanded="false"
+                                                        aria-haspopup="true"><span>···</span><i
+                                                            class="ant-menu-submenu-arrow"></i></div>
+                                                </li>
+                                                <li class="ant-menu-item" role="menuitem"><a
+                                                        aria-label="Нүүр цэс alt+shift+h"
+                                                        href="/home"><span>Нүүр</span></a></li>
+                                                <li class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu"
+                                                    role="menuitem" style="display: none;">
+                                                    <div class="ant-menu-submenu-title" aria-expanded="false"
+                                                        aria-haspopup="true"><span>···</span><i
+                                                            class="ant-menu-submenu-arrow"></i></div>
+                                                </li>
+                                                <li class="ant-menu-item" role="menuitem"><a
+                                                        aria-label="Үйлчилгээнүүд цэс alt+shift+u"
+                                                        href="/services/citizen/sector"><span>Үйлчилгээнүүд</span></a>
+                                                </li>
+                                                <li class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu"
+                                                    role="menuitem" style="display: none;">
+                                                    <div class="ant-menu-submenu-title" aria-expanded="false"
+                                                        aria-haspopup="true"><span>···</span><i
+                                                            class="ant-menu-submenu-arrow"></i></div>
+                                                </li>
+                                                <!-- <li class="ant-menu-item" role="menuitem"><a class="topMenu__ubmap"
+                                                        href="/student"><span class="topMenu__item"><img
+                                                                src="/static/assets/8ba203352685a7198b5f27aae9ff1a47.png"
+                                                                alt=""> Оюутан танд</span></a></li> -->
+                                                <li class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu"
+                                                    role="menuitem"
+                                                    style="visibility: hidden; position: absolute; display: none;">
+                                                    <div class="ant-menu-submenu-title" aria-expanded="false"
+                                                        aria-haspopup="true"><span>···</span><i
+                                                            class="ant-menu-submenu-arrow"></i></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="topMenu__right"><button type="button"
+                                                class="ant-btn topMenu__btnCheck"><i aria-label="icon: mail"
+                                                    class="anticon anticon-mail"><svg viewBox="64 64 896 896"
+                                                        focusable="false" class="" data-icon="mail" width="1em"
+                                                        height="1em" fill="currentColor" aria-hidden="true">
+                                                        <path
+                                                            d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-80.8 108.9L531.7 514.4c-7.8 6.1-18.7 6.1-26.5 0L189.6 268.9A7.2 7.2 0 0 1 194 256h648.8a7.2 7.2 0 0 1 4.4 12.9z">
+                                                        </path>
+                                                    </svg></i></button><span class="ant-badge"><button type="button"
+                                                    class="ant-btn topMenu__btnCheck ant-dropdown-trigger"><i
+                                                        aria-label="icon: bell" class="anticon anticon-bell"><svg
+                                                            viewBox="64 64 896 896" focusable="false" class=""
+                                                            data-icon="bell" width="1em" height="1em"
+                                                            fill="currentColor" aria-hidden="true">
+                                                            <path
+                                                                d="M816 768h-24V428c0-141.1-104.3-257.8-240-277.2V112c0-22.1-17.9-40-40-40s-40 17.9-40 40v38.8C336.3 170.2 232 286.9 232 428v340h-24c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h216c0 61.8 50.2 112 112 112s112-50.2 112-112h216c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zM512 888c-26.5 0-48-21.5-48-48h96c0 26.5-21.5 48-48 48z">
+                                                            </path>
+                                                        </svg></i></button></span><button type="button"
+                                                class="ant-btn topMenu__btnSignup ant-dropdown-trigger">
+                                                <div class="topMenu__text topMenu__customStyle">
+                                                    <div class="topMenu__name">Д. Бум-эрдэнэ </div>
+                                                    <div class="topMenu__email">111649772759@e-mongolia.mn</div>
+                                                </div>
+                                                <div class="topMenu__arrow"><i aria-label="icon: down"
+                                                        class="anticon anticon-down"><svg viewBox="64 64 896 896"
+                                                            focusable="false" class="" data-icon="down" width="1em"
+                                                            height="1em" fill="currentColor" aria-hidden="true">
+                                                            <path
+                                                                d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z">
+                                                            </path>
+                                                        </svg></i></div>
+                                            </button>
+                                            <div class="topMenu__hamburger mb-0">
+                                                <div class="cursor-pointer"><svg stroke="currentColor"
+                                                        fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                                        height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"
+                                                        style="font-size: 22px;">
+                                                        <g>
+                                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                                            <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z">
+                                                            </path>
+                                                        </g>
+                                                    </svg></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <main class="ant-layout-content"
+                            style="background: rgb(255, 255, 255); min-height: auto; padding-top: 64px;">
+                            <div>
+                                <div class="Account__container">
+                                    <div class="Account__headerContainer">
+                                        <div class="container">
+                                            <div class="index__pageHeader Account__header">
+                                                <div class="">
+                                                    <div class="index__breadcrumb ant-breadcrumb"><span><span
+                                                                class="ant-breadcrumb-link"><a
+                                                                    href="/">Нүүр</a></span><span
+                                                                class="ant-breadcrumb-separator">/</span></span><span><span
+                                                                class="ant-breadcrumb-link"><a
+                                                                    href="/my-account/dashboard">Хянах
+                                                                    самбар</a></span><span
+                                                                class="ant-breadcrumb-separator">/</span></span></div>
+                                                    <div class="index__detail">
+                                                        <div class="index__main">
+                                                            <div class="index__row">
+                                                                <h1 class="index__title">
+                                                                    <div class="Account__pageTitle">Тавтай морилно
+                                                                        уу!&nbsp;&nbsp;&nbsp;<b>Д. Бум-эрдэнэ</b></div>
+                                                                </h1>
+                                                            </div>
+                                                            <div class="index__row"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="Account__tbs">
+                                            <div class="Account__leftStart">
+                                                <div class="ant-tabs ant-tabs-top Account__tabs ant-tabs-line">
+                                                    <div role="tablist" class="ant-tabs-bar ant-tabs-top-bar"
+                                                        tabindex="0">
+                                                        <div
+                                                            class="ant-tabs-nav-container ant-tabs-nav-container-scrolling">
+                                                            <span unselectable="unselectable"
+                                                                class="ant-tabs-tab-prev ant-tabs-tab-arrow-show"><span
+                                                                    class="ant-tabs-tab-prev-icon"><i
+                                                                        aria-label="icon: left"
+                                                                        class="anticon anticon-left ant-tabs-tab-prev-icon-target"><svg
+                                                                            viewBox="64 64 896 896" focusable="false"
+                                                                            class="" data-icon="left" width="1em"
+                                                                            height="1em" fill="currentColor"
+                                                                            aria-hidden="true">
+                                                                            <path
+                                                                                d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z">
+                                                                            </path>
+                                                                        </svg></i></span></span><span
+                                                                unselectable="unselectable"
+                                                                class="ant-tabs-tab-next ant-tabs-tab-btn-disabled ant-tabs-tab-arrow-show"><span
+                                                                    class="ant-tabs-tab-next-icon"><i
+                                                                        aria-label="icon: right"
+                                                                        class="anticon anticon-right ant-tabs-tab-next-icon-target"><svg
+                                                                            viewBox="64 64 896 896" focusable="false"
+                                                                            class="" data-icon="right" width="1em"
+                                                                            height="1em" fill="currentColor"
+                                                                            aria-hidden="true">
+                                                                            <path
+                                                                                d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z">
+                                                                            </path>
+                                                                        </svg></i></span></span>
+                                                            <div class="ant-tabs-nav-wrap">
+                                                                <div class="ant-tabs-nav-scroll">
+                                                                    <div class="ant-tabs-nav ant-tabs-nav-animated"
+                                                                        style="transform: translate3d(-219px, 0px, 0px);">
+                                                                        <div>
+                                                                            <div role="tab" aria-disabled="false"
+                                                                                aria-selected="false"
+                                                                                class=" ant-tabs-tab">Хянах самбар</div>
+                                                                            <div role="tab" aria-disabled="false"
+                                                                                aria-selected="false"
+                                                                                class=" ant-tabs-tab">Хүсэлтүүд</div>
+                                                                            <div role="tab" aria-disabled="false"
+                                                                                aria-selected="false"
+                                                                                class=" ant-tabs-tab">Баталгаажуулалт
+                                                                            </div>
+                                                                            <div role="tab" aria-disabled="false"
+                                                                                aria-selected="false"
+                                                                                class=" ant-tabs-tab">Төлбөр тооцоо
+                                                                            </div>
+                                                                            <div role="tab" aria-disabled="false"
+                                                                                aria-selected="false"
+                                                                                class=" ant-tabs-tab">Мэдээлэл</div>
+                                                                            <div role="tab" aria-disabled="false"
+                                                                                aria-selected="false"
+                                                                                class=" ant-tabs-tab">Өрхийн гишүүдийн
+                                                                                мэдээлэл</div>
+                                                                            <div role="tab" aria-disabled="false"
+                                                                                aria-selected="true"
+                                                                                class="ant-tabs-tab-active ant-tabs-tab">
+                                                                                Хувийн мэдээлэл</div>
+                                                                        </div>
+                                                                        <div class="ant-tabs-ink-bar ant-tabs-ink-bar-animated"
+                                                                            style="display: block; transform: translate3d(784px, 0px, 0px); width: 126px;">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div tabindex="0" role="presentation"
+                                                        style="width: 0px; height: 0px; overflow: hidden; position: absolute;">
+                                                    </div>
+                                                    <div class="ant-tabs-content ant-tabs-content-animated ant-tabs-top-content"
+                                                        style="margin-left: -600%;">
+                                                        <div role="tabpanel" aria-hidden="true"
+                                                            class="ant-tabs-tabpane ant-tabs-tabpane-inactive"></div>
+                                                        <div role="tabpanel" aria-hidden="true"
+                                                            class="ant-tabs-tabpane ant-tabs-tabpane-inactive"></div>
+                                                        <div role="tabpanel" aria-hidden="true"
+                                                            class="ant-tabs-tabpane ant-tabs-tabpane-inactive"></div>
+                                                        <div role="tabpanel" aria-hidden="true"
+                                                            class="ant-tabs-tabpane ant-tabs-tabpane-inactive"></div>
+                                                        <div role="tabpanel" aria-hidden="true"
+                                                            class="ant-tabs-tabpane ant-tabs-tabpane-inactive"></div>
+                                                        <div role="tabpanel" aria-hidden="true"
+                                                            class="ant-tabs-tabpane ant-tabs-tabpane-inactive"></div>
+                                                        <div role="tabpanel" aria-hidden="false"
+                                                            class="ant-tabs-tabpane ant-tabs-tabpane-active">
+                                                            <div tabindex="0" role="presentation"
+                                                                style="width: 0px; height: 0px; overflow: hidden; position: absolute;">
+                                                            </div>
+                                                            <div tabindex="0" role="presentation"
+                                                                style="width: 0px; height: 0px; overflow: hidden; position: absolute;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div tabindex="0" role="presentation"
+                                                        style="width: 0px; height: 0px; overflow: hidden; position: absolute;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Account__rightEnd">
+                                                <div class="ant-tabs ant-tabs-top Account__tabs ant-tabs-line">
+                                                    <div role="tablist" class="ant-tabs-bar ant-tabs-top-bar"
+                                                        tabindex="0">
+                                                        <div class="ant-tabs-nav-container"><span
+                                                                unselectable="unselectable"
+                                                                class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"><span
+                                                                    class="ant-tabs-tab-prev-icon"><i
+                                                                        aria-label="icon: left"
+                                                                        class="anticon anticon-left ant-tabs-tab-prev-icon-target"><svg
+                                                                            viewBox="64 64 896 896" focusable="false"
+                                                                            class="" data-icon="left" width="1em"
+                                                                            height="1em" fill="currentColor"
+                                                                            aria-hidden="true">
+                                                                            <path
+                                                                                d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z">
+                                                                            </path>
+                                                                        </svg></i></span></span><span
+                                                                unselectable="unselectable"
+                                                                class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"><span
+                                                                    class="ant-tabs-tab-next-icon"><i
+                                                                        aria-label="icon: right"
+                                                                        class="anticon anticon-right ant-tabs-tab-next-icon-target"><svg
+                                                                            viewBox="64 64 896 896" focusable="false"
+                                                                            class="" data-icon="right" width="1em"
+                                                                            height="1em" fill="currentColor"
+                                                                            aria-hidden="true">
+                                                                            <path
+                                                                                d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z">
+                                                                            </path>
+                                                                        </svg></i></span></span>
+                                                            <div class="ant-tabs-nav-wrap">
+                                                                <div class="ant-tabs-nav-scroll">
+                                                                    <div class="ant-tabs-nav ant-tabs-nav-animated">
+                                                                        <div>
+                                                                            <div role="tab" aria-disabled="false"
+                                                                                aria-selected="false"
+                                                                                class=" ant-tabs-tab"><span
+                                                                                    class="Account__overflowHidden"><i
+                                                                                        aria-label="icon: mail"
+                                                                                        class="anticon anticon-mail"><svg
+                                                                                            viewBox="64 64 896 896"
+                                                                                            focusable="false" class=""
+                                                                                            data-icon="mail" width="1em"
+                                                                                            height="1em"
+                                                                                            fill="currentColor"
+                                                                                            aria-hidden="true">
+                                                                                            <path
+                                                                                                d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 110.8V792H136V270.8l-27.6-21.5 39.3-50.5 42.8 33.3h643.1l42.8-33.3 39.3 50.5-27.7 21.5zM833.6 232L512 482 190.4 232l-42.8-33.3-39.3 50.5 27.6 21.5 341.6 265.6a55.99 55.99 0 0 0 68.7 0L888 270.8l27.6-21.5-39.3-50.5-42.7 33.2z">
+                                                                                            </path>
+                                                                                        </svg></i> <span>Имэйл</span>
+                                                                                </span></div>
+                                                                        </div>
+                                                                        <div class="ant-tabs-ink-bar ant-tabs-ink-bar-animated"
+                                                                            style="display: none;"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div tabindex="0" role="presentation"
+                                                        style="width: 0px; height: 0px; overflow: hidden; position: absolute;">
+                                                    </div>
+                                                    <div class="ant-tabs-content ant-tabs-content-animated ant-tabs-top-content"
+                                                        style="display: none;">
+                                                        <div role="tabpanel" aria-hidden="true"
+                                                            class="ant-tabs-tabpane ant-tabs-tabpane-inactive"></div>
+                                                    </div>
+                                                    <div tabindex="0" role="presentation"
+                                                        style="width: 0px; height: 0px; overflow: hidden; position: absolute;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-15">
+                                            <div class="ant-card ant-card-bordered">
+                                                <div class="ant-card-head">
+                                                    <div class="ant-card-head-wrapper">
+                                                        <div class="ant-card-head-title">
+                                                            <div class="Profile__title">Хувийн мэдээлэл</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="ant-card-body">
+                                                    <div>
+                                                        <div class="ant-row"
+                                                            style="margin-left: -17.5px; margin-right: -17.5px;">
+                                                            <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-4 ant-col-lg-4 ant-col-xl-4"
+                                                                style="padding-left: 17.5px; padding-right: 17.5px;">
+                                                                <!-- <img src="data:image/jpeg;base64,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" -->
+
+                                                                    <!-- alt="" style="width: 100%;"> -->
+                                                                    <img src="./bumerdene.jpg" alt="asd" style="width: 100%;" >
+                                                                </div>
+                                                            <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-20 ant-col-lg-20 ant-col-xl-20"
+                                                                style="padding-left: 17.5px; padding-right: 17.5px;">
+                                                                <h1
+                                                                    class="CitizenDataView__cardTitle CitizenDataView__sm">
+                                                                    Үндсэн мэдээлэл</h1>
+                                                                <div class="CitizenDataView__enquiryContent">
+                                                                    <p
+                                                                        class="CitizenDataView__descriptionItem CitizenDataView__even">
+                                                                        <span
+                                                                            class="CitizenDataView__descriptionTerm">Регистрийн
+                                                                            дугаар:</span><span
+                                                                            class="CitizenDataView__textUppercased">УП02221410</span>
+                                                                    </p>
+                                                                    <p class="CitizenDataView__descriptionItem"><span
+                                                                            class="CitizenDataView__descriptionTerm">Ургийн
+                                                                            овог:</span><span
+                                                                            class="CitizenDataView__textCapitalized">Чонос</span>
+                                                                    </p>
+                                                                    <p
+                                                                        class="CitizenDataView__descriptionItem CitizenDataView__even">
+                                                                        <span
+                                                                            class="CitizenDataView__descriptionTerm">Эцэг
+                                                                            /эх/-ийн нэр:</span><span
+                                                                            class="CitizenDataView__textCapitalized">Доржтайван</span>
+                                                                    </p>
+                                                                    <p class="CitizenDataView__descriptionItem"><span
+                                                                            class="CitizenDataView__descriptionTerm">Нэр:</span><span
+                                                                            class="CitizenDataView__textCapitalized">Бум-эрдэнэ</span>
+                                                                    </p>
+                                                                    <p
+                                                                        class="CitizenDataView__descriptionItem CitizenDataView__even">
+                                                                        <span
+                                                                            class="CitizenDataView__descriptionTerm">Яс
+                                                                            үндэс:</span><span
+                                                                            class="CitizenDataView__textCapitalized">Халх</span>
+                                                                    </p>
+                                                                    <p class="CitizenDataView__descriptionItem"><span
+                                                                            class="CitizenDataView__descriptionTerm">Хүйс:</span><span
+                                                                            class="CitizenDataView__textCapitalized">Эрэгтэй</span>
+                                                                    </p>
+                                                                </div>
+                                                                <h1
+                                                                    class="CitizenDataView__cardTitle CitizenDataView__sm">
+                                                                    Төрсөн</h1>
+                                                                <div class="CitizenDataView__enquiryContent">
+                                                                    <p
+                                                                        class="CitizenDataView__descriptionItem CitizenDataView__even">
+                                                                        <span
+                                                                            class="CitizenDataView__descriptionTerm">Огноо:</span>2002-02-14
+                                                                    </p>
+                                                                    <p class="CitizenDataView__descriptionItem"><span
+                                                                            class="CitizenDataView__descriptionTerm">Газар:</span>Улаанбаатар,Сүхбаатар
+                                                                    </p>
+                                                                </div>
+                                                                <h1
+                                                                    class="CitizenDataView__cardTitle CitizenDataView__sm">
+                                                                    Иргэний үнэмлэх</h1>
+                                                                <div class="CitizenDataView__enquiryContent">
+                                                                    <p
+                                                                        class="CitizenDataView__descriptionItem CitizenDataView__even">
+                                                                        <span
+                                                                            class="CitizenDataView__descriptionTerm">Бүртгэлийн
+                                                                            дугаар:</span>111649772759</p>
+                                                                    <p class="CitizenDataView__descriptionItem"><span
+                                                                            class="CitizenDataView__descriptionTerm">Олгосон
+                                                                            огноо:</span>2018-04-12</p>
+                                                                    <p
+                                                                        class="CitizenDataView__descriptionItem CitizenDataView__even">
+                                                                        <span
+                                                                            class="CitizenDataView__descriptionTerm">Хүчинтэй
+                                                                            хугацаа:</span>2026-02-14</p>
+                                                                </div>
+                                                                <h1
+                                                                    class="CitizenDataView__cardTitle CitizenDataView__sm">
+                                                                    Иргэний үнэмлэхэд хэвлэгдсэн хаяг</h1>
+                                                                <div class="CitizenDataView__enquiryContent">
+                                                                    <p
+                                                                        class="CitizenDataView__descriptionItem CitizenDataView__even">
+                                                                        <span
+                                                                            class="CitizenDataView__descriptionTerm">Хаяг:</span>УБ,
+                                                                        Сонгинохайрхан@31-р хороо, налуу 1 гудамж@13
+                                                                        тоот</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                        <div class="footer__main">
+                            <div class="footer__content">
+                                <div class="container">
+                                    <div class="ant-row" style="margin-left: -17.5px; margin-right: -17.5px;">
+                                        <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-10 ant-col-lg-12 ant-col-xl-10"
+                                            style="padding-left: 17.5px; padding-right: 17.5px;"><img
+                                                src="logo.svg" alt="logo">
+                                            <p>© 2023 - Цахим хөгжил, харилцаа<br>холбооны яам</p>
+                                            <div class="footer__social"><a href="https://www.facebook.com/emongolia"
+                                                    target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg
+                                                        stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                        viewBox="0 0 24 24" height="1em" width="1em"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g>
+                                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                                            <path
+                                                                d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z">
+                                                            </path>
+                                                        </g>
+                                                    </svg></a><a href="https://twitter.com/emnongoliamn" target="_blank"
+                                                    rel="noopener noreferrer" aria-label="Twitter"><svg
+                                                        stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                        viewBox="0 0 24 24" height="1em" width="1em"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g>
+                                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                                            <path
+                                                                d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z">
+                                                            </path>
+                                                        </g>
+                                                    </svg></a><a href="https://www.instagram.com/emongoliamn/"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    aria-label="Instagram"><svg stroke="currentColor"
+                                                        fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                                        height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                        <g>
+                                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                                            <path fill-rule="nonzero"
+                                                                d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z">
+                                                            </path>
+                                                        </g>
+                                                    </svg></a><a
+                                                    href="https://www.youtube.com/channel/UCVqv_boa73KgDV0NyqbRRZw/"
+                                                    target="_blank" rel="noopener noreferrer" aria-label="Youtube"><svg
+                                                        stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                        viewBox="0 0 24 24" height="1em" width="1em"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g>
+                                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                                            <path
+                                                                d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z">
+                                                            </path>
+                                                        </g>
+                                                    </svg></a></div>
+                                        </div>
+                                        <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-9 ant-col-lg-6 ant-col-xl-7"
+                                            style="padding-left: 17.5px; padding-right: 17.5px;">
+                                            <div class="footer__list">
+                                                <div class="footer__listHeader" style="padding: 12px 0px;">Холбоо барих
+                                                </div>
+                                                <div class="footer__contact">
+                                                    <div class="footer__item">
+                                                        <div class="footer__left"><span><svg stroke="currentColor"
+                                                                    fill="currentColor" stroke-width="0"
+                                                                    viewBox="0 0 24 24" height="1em" width="1em"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <g>
+                                                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                                                        <path
+                                                                            d="M18.364 17.364L12 23.728l-6.364-6.364a9 9 0 1 1 12.728 0zM12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 1 0-4 2 2 0 0 1 0 4z">
+                                                                        </path>
+                                                                    </g>
+                                                                </svg></span></div>
+                                                        <div class="footer__right">
+                                                            <p>Ш/х-785, Төв шуудан, Сүхбаатарын талбай 1, Чингэлтэй
+                                                                дүүрэг, УБ 15160-0026.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="footer__item">
+                                                        <div class="footer__left"><span><svg stroke="currentColor"
+                                                                    fill="currentColor" stroke-width="0"
+                                                                    viewBox="0 0 24 24" height="1em" width="1em"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <g>
+                                                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                                                        <path
+                                                                            d="M21 16.42v3.536a1 1 0 0 1-.93.998c-.437.03-.794.046-1.07.046-8.837 0-16-7.163-16-16 0-.276.015-.633.046-1.07A1 1 0 0 1 4.044 3H7.58a.5.5 0 0 1 .498.45c.023.23.044.413.064.552A13.901 13.901 0 0 0 9.35 8.003c.095.2.033.439-.147.567l-2.158 1.542a13.047 13.047 0 0 0 6.844 6.844l1.54-2.154a.462.462 0 0 1 .573-.149 13.901 13.901 0 0 0 4 1.205c.139.02.322.042.55.064a.5.5 0 0 1 .449.498z">
+                                                                        </path>
+                                                                    </g>
+                                                                </svg></span></div>
+                                                        <div class="footer__right">
+                                                            <p>1111</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="footer__item">
+                                                        <div class="footer__left"><span><svg stroke="currentColor"
+                                                                    fill="currentColor" stroke-width="0"
+                                                                    viewBox="0 0 24 24" height="1em" width="1em"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <g>
+                                                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                                                        <path
+                                                                            d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm9.06 8.683L5.648 6.238 4.353 7.762l7.72 6.555 7.581-6.56-1.308-1.513-6.285 5.439z">
+                                                                        </path>
+                                                                    </g>
+                                                                </svg></span></div>
+                                                        <div class="footer__right">
+                                                            <p>e-mongolia@ema.gov.mn</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-5 ant-col-lg-6 ant-col-xl-7"
+                                            style="padding-left: 17.5px; padding-right: 17.5px;">
+                                            <div class="ant-list footer__list ant-list-sm ant-list-split"
+                                                style="margin-bottom: 15px;">
+                                                <div class="ant-list-header">
+                                                    <div class="footer__listHeader">Вэб хандалтын тоо</div>
+                                                </div>
+                                                <div class="ant-spin-nested-loading">
+                                                    <div class="ant-spin-container">
+                                                        <ul class="ant-list-items">
+                                                            <li class="ant-list-item footer__listItem"><a
+                                                                    href="/">Өнөөдөр: <span>10,064</span></a></li>
+                                                            <li class="ant-list-item footer__listItem"><a href="/">Энэ 7
+                                                                    хоног: <span>42,278</span></a></li>
+                                                            <li class="ant-list-item footer__listItem"><a href="/">Энэ
+                                                                    сар: <span>332,477</span></a></li>
+                                                            <li class="ant-list-item footer__listItem"><a href="/">Нийт:
+                                                                    <span>8,943,490</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__footer">
+                                <div class="container">
+                                    <div class="ant-row" style="margin-left: -12.5px; margin-right: -12.5px;">
+                                        <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-12 ant-col-lg-12 ant-col-xl-12"
+                                            style="padding-left: 12.5px; padding-right: 12.5px;"><a
+                                                href="/privacy-policy">Үйлчилгээний нөхцөл</a></div>
+                                        <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-12 ant-col-lg-12 ant-col-xl-12"
+                                            style="padding-left: 12.5px; padding-right: 12.5px;">
+                                            <div style="text-align: right;"><a href="https://ema.gov.mn/"
+                                                    target="_blank" rel="noopener noreferrer"><img
+                                                        src="/static/assets/5efd95fbfcef6a807b5d6787b9c6003c.svg"
+                                                        alt=""></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="/static/vendors~index.js" type="text/javascript"></script>
+    <script src="/static/index.js" type="text/javascript"></script>
+
+
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-129610459-2" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-129610459-2');
+    </script>
+    <script async="" id="twitter-wjs" type="text/javascript" defer=""
+        src="https://platform.twitter.com/widgets.js"></script>
+    <script defer=""
+        src="https://static.cloudflareinsights.com/beacon.min.js/vb26e4fa9e5134444860be286fd8771851679335129114"
+        integrity="sha512-M3hN/6cva/SjwrOtyXeUa5IuCT0sedyfT+jK/OV+s+D0RnzrTfwjwJHhd+wYfMm9HJSrZ1IKksOdddLuN6KOzw=="
+        data-cf-beacon="{&quot;rayId&quot;:&quot;7af686ccf7493892&quot;,&quot;version&quot;:&quot;2023.3.0&quot;,&quot;b&quot;:1,&quot;icTag&quot;:[&quot;sxg_enabled&quot;],&quot;token&quot;:&quot;3c08261e518743e180b64f859175690d&quot;,&quot;si&quot;:100}"
+        crossorigin="anonymous"></script>
+
+
+    <iframe scrolling="no" frameborder="0" allowtransparency="true"
+        src="https://platform.twitter.com/widgets/widget_iframe.2b2d73daf636805223fb11d48f3e94f7.html?origin=https%3A%2F%2Fe-mongolia.mn"
+        title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no"
+        frameborder="0" allowtransparency="true" allowfullscreen="true"
+        style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;"
+        title="Twitter analytics iframe"></iframe>
+    <div>
+        <div class="ant-modal-root">
+            <div class="ant-modal-mask ant-modal-mask-hidden"></div>
+            <div tabindex="-1" class="ant-modal-wrap " role="dialog" aria-labelledby="rcDialogTitle0"
+                style="display: none;">
+                <div role="document" class="ant-modal topMenu__modal"
+                    style="width: 600px; transform-origin: 862px -75px;">
+                    <div tabindex="0" aria-hidden="true"
+                        style="width: 0px; height: 0px; overflow: hidden; outline: none;"></div>
+                    <div class="ant-modal-content"><button type="button" aria-label="Close"
+                            class="ant-modal-close"><span class="ant-modal-close-x"><i aria-label="icon: close"
+                                    class="anticon anticon-close ant-modal-close-icon"><svg viewBox="64 64 896 896"
+                                        focusable="false" class="" data-icon="close" width="1em" height="1em"
+                                        fill="currentColor" aria-hidden="true">
+                                        <path
+                                            d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z">
+                                        </path>
+                                    </svg></i></span></button>
+                        <div class="ant-modal-header">
+                            <div class="ant-modal-title" id="rcDialogTitle0">Системд нэвтрэх төрлөө сонгоно уу</div>
+                        </div>
+                        <div class="ant-modal-body">
+                            <div class="topMenu__modalContent">
+                                <div class="ant-row" style="margin-left: -12.5px; margin-right: -12.5px;">
+                                    <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-10 ant-col-lg-10"
+                                        style="padding-left: 12.5px; padding-right: 12.5px;">
+                                        <div class="topMenu__qr"><span><canvas id="react-qrcode-logo" height="170"
+                                                    width="170" style="height: 170px; width: 170px;"></canvas>
+                                                <p>QR нэвтрэлт</p>
+                                            </span>
+                                            <p>QR кодыг E-Mongolia аппликэйшнаар уншуулна уу</p>
+                                        </div>
+                                    </div>
+                                    <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-14 ant-col-lg-14"
+                                        style="padding-left: 12.5px; padding-right: 12.5px;">
+                                        <div>
+                                            <div class="topMenu__item">
+                                                <div class="topMenu__left"><img
+                                                        src="/static/assets/bf9bc7e390e84674c6bd4f17ef4f8e71.svg"
+                                                        alt=""></div>
+                                                <div class="topMenu__right">
+                                                    <p>Гар утасны дугаараар нэвтрэх</p>
+                                                </div>
+                                            </div>
+                                            <div class="topMenu__item">
+                                                <div class="topMenu__left"><img
+                                                        src="/static/assets/3105913814a932c67473c44306041461.svg"
+                                                        alt=""></div>
+                                                <div class="topMenu__right">
+                                                    <p>Тоон гарын үсгээр нэвтрэх</p>
+                                                </div>
+                                            </div>
+                                            <div class="topMenu__item">
+                                                <div class="topMenu__left"><img
+                                                        src="/static/assets/81df805188e7ee2193bd62e73aa00380.svg"
+                                                        alt=""></div>
+                                                <div class="topMenu__right">
+                                                    <p>Банкны эрхээр нэвтрэх</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ant-modal-footer"><button type="button" class="ant-btn"><span>Болих</span></button>
+                        </div>
+                    </div>
+                    <div tabindex="0" aria-hidden="true"
+                        style="width: 0px; height: 0px; overflow: hidden; outline: none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style></style>
+</body>
+
+</html>
